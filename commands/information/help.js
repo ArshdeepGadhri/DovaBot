@@ -8,7 +8,7 @@ module.exports = {
 	cooldown: 5,
 	data: data,
 	async execute(interaction) {
-        var adminTag = process.env.ADMIN_TAG;
+        var adminEmail = process.env.ADMIN_EMAIL;
         var thumbnailURL = interaction.client.user.displayAvatarURL(); 
 		const embed = new EmbedBuilder()
             .setColor("DarkGold")
@@ -19,7 +19,7 @@ module.exports = {
                 { name: 'Page 2', value: "Information Commands (Page 2)" },
                 { name: 'Page 3', value: "Feature Commands (Page 3)" },
                 { name: '\u200B', value: '\u200B' },
-                { name: "Admin email contact", value: "ardtraining@o365ucr.onmicrosoft.com" }
+                { name: "Admin email contact", value: adminEmail }
             )
             .setThumbnail(thumbnailURL)
             .setTimestamp();
