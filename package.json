@@ -1,0 +1,16 @@
+{
+  "name": "dova-bot",
+  "version": "1.0.0",
+  "description": "DiscordBot for Brandono",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arshdeep G",
+  "license": "ISC",
+  "dependencies": {
+    "discord-html-transcripts": "^3.1.5",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}

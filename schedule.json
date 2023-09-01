@@ -1,0 +1,488 @@
+{
+    "sept5": {
+        "day": "Tuesday, September 5th - Spirit Theme",
+        "events": [
+            {
+                "Session": "Welcome and Introductions",
+                "Location": "HUB 302 South",
+                "Presenters": "Jo & ARDs",
+                "Assessment Review": "n/a",
+                "Notes": "ARDs going over spirit/discord/staff skit/chant/celebration",
+                "Timings": "8:30am - 9:30am"
+            },
+            {
+                "Session": "Residential Curriculum",
+                "Location": "HUB 302 South",
+                "Presenters": "Rose & Kelsey",
+                "Assessment Review": "Fiona",
+                "Notes": "Leadership joining",
+                "Timings": "9:30am - 10:30am"
+            },
+            {
+                "Session": "StarRez: Navigation & Programming",
+                "Location": "HUB 302 South",
+                "Presenters": "John-Paul",
+                "Assessment Review": "Fiona",
+                "Notes": "Leadership joining",
+                "Timings": "10:30am - 12:00pm"
+            },
+            {
+                "Session": "Welcome Lunch @ The Barn",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Team Time",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept6": {
+        "day": "Wednesday, September 6th",
+        "events": [
+            {
+                "Session": "RA Intentional Interactions / PA Team Time",
+                "Location": "PH Foxhole",
+                "Presenters": "John-Paul & Chris ADs Engagement",
+                "Assessment Review": "Brandon",
+                "Notes": "RAs cont / PAs in Team Time",
+                "Timings": "8:30am - 10:00am"
+            },
+            {
+                "Session": "Program Simulations",
+                "Location": "PH Foxhole | PH C104 | PH D105 | PH D103",
+                "Presenters": "ARDs",
+                "Assessment Review": "n/a",
+                "Notes": "ARD preparing session for new RAs/PAs",
+                "Timings": "10:00am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Glasgow",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Team Time",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept7": {
+        "day": "Thursday, September 7th",
+        "events": [
+            {
+                "Session": "Marketing, Social Media & Technology",
+                "Location": "HUB 302 South",
+                "Presenters": "Ivy & Myra",
+                "Assessment Review": "Anh-Tho",
+                "Notes": "Leadership joining",
+                "Timings": "9:00am - 10:00am"
+            },
+            {
+                "Session": "Budget & Purchasing",
+                "Location": "HUB 302 South",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "Leadership joining",
+                "Timings": "10:00am - 10:30am"
+            },
+            {
+                "Session": "Office of Sustainability",
+                "Location": "HUB 302 South",
+                "Presenters": "Francis",
+                "Assessment Review": "n/a",
+                "Notes": "Leadership joining",
+                "Timings": "10:30am - 11:00am"
+            },
+            {
+                "Session": "Academic & Experimental LLCs",
+                "Location": "HUB 302 South",
+                "Presenters": "Kelsey & Santiago",
+                "Assessment Review": "Jazmin",
+                "Notes": "Leadership joining",
+                "Timings": "11:00am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Glasgow",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Team Time",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept8": {
+        "day": "Friday, September 8th",
+        "events": [
+            {
+                "Session": "Duty and Incident Response Part 1",
+                "Location": "HUB 302 South",
+                "Presenters": "Serafin, Karie & Nick",
+                "Assessment Review": "Jo",
+                "Notes": "All Student Staff for Expectations and Strucutre Leadership joining",
+                "Timings": "8:30am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Glasgow",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Team Time",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept11": {
+        "day": "Monday, September 11th",
+        "events": [
+            {
+                "Session": "Duty and Incident Response Part 2 (PA Area Time)",
+                "Location": "Dundee MPR, SSC MPR",
+                "Presenters": "Serafin, Karie & Nick (Engagement Team ADs)",
+                "Assessment Review": "Jo",
+                "Notes": "RA cont. / PAs in Area Time",
+                "Timings": "8:30am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Lothian",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "RA Team Time, PA Area Time",
+                "Location": "Community, PH Bearcave",
+                "Presenters": "RDs, Engagement Team ADs",
+                "Assessment Review": "n/a",
+                "Notes": "RA / PAs seperate into different groups",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept12": {
+        "day": "Tuesday, September 12th",
+        "events": [
+            {
+                "Session": "Conflict Mediation",
+                "Location": "HUB 302 South",
+                "Presenters": "Ruby",
+                "Assessment Review": "Brandon",
+                "Notes": "RA cont. / PAs in Area Time",
+                "Timings": "9:00am - 10:00am"
+            },
+            {
+                "Session": "Incident Report Writing & Star Rez Contributions",
+                "Location": "HUB 302 South",
+                "Presenters": "John-Paul & Chris",
+                "Assessment Review": "Santiago",
+                "Notes": "All student staff, Note: PAs public reporting form",
+                "Timings": "10:00am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Lothian",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Team Time",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept13": {
+        "day": "Wednesday, September 13th",
+        "events": [
+            {
+                "Session": "Admin: LMS Training",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "8:00am - 10:00am"
+            },
+            {
+                "Session": "Campus Resource Fair",
+                "Location": "HUB 302 North",
+                "Presenters": "Jo ARD Training ARD Developement",
+                "Assessment Review": "n/a",
+                "Notes": "ARDs day off, Bingo for visiting tables",
+                "Timings": "10:00am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Lothian",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Area Time",
+                "Location": "LO/AI - Lothian Den, PH/DU - DU MPR, CAW/GM - GM K106/108",
+                "Presenters": "ADRLs take lead",
+                "Assessment Review": "n/a",
+                "Notes": "AI/LO, PH/DU, CAW/GM, PAs to respective community",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept14": {
+        "day": "Thursday, September 14th",
+        "events": [
+            {
+                "Session": "International Student Services (ISS)",
+                "Location": "HUB 302 North",
+                "Presenters": "Kelsey",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "9:00am - 10:00am"
+            },
+            {
+                "Session": "Title IX",
+                "Location": "HUB 302 North",
+                "Presenters": "Chris",
+                "Assessment Review": "Santiago",
+                "Notes": "Leadership joining",
+                "Timings": "10:00am - 11:00am"
+            },
+            {
+                "Session": "CAPS, CARE, SACM",
+                "Location": "HUB 302 North",
+                "Presenters": "Chris",
+                "Assessment Review": "Santiago",
+                "Notes": "Leadership joining",
+                "Timings": "11:00am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Lothian",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Team Time (Behind Closed Doors: BCDs)",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "Jo",
+                "Notes": "RAs in community, PAs join the community live in",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept15": {
+        "day": "Friday, September 15th",
+        "events": [
+            {
+                "Session": "EHS",
+                "Location": "HUB 302 North",
+                "Presenters": "Jo",
+                "Assessment Review": "Jose",
+                "Notes": "n/a",
+                "Timings": "8:30am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Lothian",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Team Time (Behind Closed Doors: BCDs)",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept18": {
+        "day": "Monday, September 18th",
+        "events": [
+            {
+                "Session": "ARC",
+                "Location": "HUB 302 South",
+                "Presenters": "Jo",
+                "Assessment Review": "Jazmin",
+                "Notes": "Leadership joining",
+                "Timings": "9:00am - 10:00am"
+            },
+            {
+                "Session": "Move-In",
+                "Location": "HUB 302 South",
+                "Presenters": "Rose",
+                "Assessment Review": "n/a",
+                "Notes": "Leadership joining",
+                "Timings": "10:00am - 11:00am"
+            },
+            {
+                "Session": "Welcome Week & Leadership",
+                "Location": "HUB 302 South",
+                "Presenters": "Myra",
+                "Assessment Review": "Anh-Tho",
+                "Notes": "Leadership joining",
+                "Timings": "11:00am - 12:00pm"
+            },
+            {
+                "Session": "Lunch Catered",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Team Time (DEI Activity)",
+                "Location": "Community",
+                "Presenters": "Serafin & Darcy",
+                "Assessment Review": "Jose",
+                "Notes": "n/a",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept19": {
+        "day": "Tuesday, September 19th",
+        "events": [
+            {
+                "Session": "DEI",
+                "Location": "Pentland Bearcave",
+                "Presenters": "Serafin & Darcy",
+                "Assessment Review": "Jose",
+                "Notes": "Lecture style set up, leadership joining",
+                "Timings": "8:30am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ Glasgow or Lothian",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "DEI",
+                "Location": "Pentland Bearcave",
+                "Presenters": "Serafin & Darcy",
+                "Assessment Review": "Jose",
+                "Notes": "Lecture style set up, leadership joining",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept20": {
+        "day": "Wednesday, September 20th - Community Colours",
+        "events": [
+            {
+                "Session": "Team Time",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "8:00am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Lothian",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Training Celebration",
+                "Location": "n/a",
+                "Presenters": "Jo, ARD Training, ARD Recruitment",
+                "Assessment Review": "Jo",
+                "Notes": "Leadership joining",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept21": {
+        "day": "Thursday, September 21th",
+        "events": [
+            {
+                "Session": "Community Prep",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "8:00am - 12:00pm"
+            },
+            {
+                "Session": "Lunch @ The Barn or Lothian",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "12:00pm - 1:30pm"
+            },
+            {
+                "Session": "Community Prep",
+                "Location": "Community",
+                "Presenters": "RD / AD",
+                "Assessment Review": "n/a",
+                "Notes": "n/a",
+                "Timings": "1:30pm - 5:00pm"
+            }
+        ]
+    },
+    "sept22": {
+        "day": "Friday, September 22th",
+        "events": [
+            {
+                "Session": "Move in Begins",
+                "Location": "n/a",
+                "Presenters": "n/a",
+                "Assessment Review": "n/a",
+                "Notes": "Breakfast Lunch and Dinner @ Lothian",
+                "Timings": "8:00am - 5:00pm"
+            }
+        ]
+    }
+}
