@@ -14,7 +14,7 @@ module.exports = {
 
         const newsletterFile = process.env.NEWS_LETTER_FILE;  
         const file = new AttachmentBuilder(`./${newsletterFile}`);
-        member.user.send({content: "Here is your newsletter", files: [file]});
-        interaction.reply({content: "Check your DMs", ephemeral: true});
+        member.user.send({ content: "Here is your newsletter", files: [file] });
+        interaction.reply({ content: "Check your DMs", ephemeral: true });
     },
 };

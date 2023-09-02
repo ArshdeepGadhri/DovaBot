@@ -107,7 +107,7 @@ module.exports = {
                     var user = interaction.user;
                     var author = user.globalName + " here are the latest updates.";
                     var authorIcon = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=256`;
-                    interaction.reply({ embeds: [sendEmbed(title, description, author, authorIcon, subTitle, subDescription, footer)] })
+                    interaction.reply({ embeds: [sendEmbed(title, description, author, authorIcon, subTitle, subDescription, footer)], ephemeral: true })
                 } catch (err) {
                     console.log("Error parsing JSON string:", err);
                 }

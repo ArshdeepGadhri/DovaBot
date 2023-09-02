@@ -7,7 +7,7 @@ function sendEmbed(title, fields, avatarURL) {
         .setFooter({iconURL: avatarURL, text: "Schedule"})
         .setThumbnail("https://cdn-icons-png.flaticon.com/512/2693/2693710.png");
     fields.forEach(field => {
-        var desc = !field.Session.includes("Lunch") ? `📌: ${field.Location}\n🎤: ${field.Presenters}\n📝: ${field.Notes}` : "🍜 \u200B"
+        var desc = !field.Session.includes("Lunch") ? `📌: ${field.Location}\n🎤: ${field.Presenters}` : "🍜 \u200B"
         updateEmbed.addFields([{name: field.Session + " - " + field.Timings + "\n", value: desc, inline: false}, { name: '\u200B', value: ' ' }])
     })
     return updateEmbed;
@@ -48,6 +48,6 @@ module.exports = {
         var events = data.events;
         var url = interaction.client.user.displayAvatarURL();
 
-        interaction.reply({ embeds: [sendEmbed(data.day, events, url)] })
+        interaction.reply({ embeds: [sendEmbed(data.day, events, url)], ephemeral: true })
 	},
 };

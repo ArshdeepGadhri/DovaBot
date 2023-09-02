@@ -21,12 +21,12 @@ module.exports = {
 			const user = interaction.options.getUser('target');
 
 			if (user) {
-				await interaction.reply(`Username: ${user.username}\nID: ${user.id}`);
+				await interaction.reply({content: `Username: ${user.username}\nID: ${user.id}`, ephemeral: true});
 			} else {
-				await interaction.reply(`Your username: ${interaction.user.username}\nYour ID: ${interaction.user.id}`);
+				await interaction.reply({content: `Your username: ${interaction.user.username}\nYour ID: ${interaction.user.id}`, ephemeral: true});
 			}
 		} else if (interaction.options.getSubcommand() === 'server') {
-			await interaction.reply(`Server name: ${interaction.guild.name}\nTotal members: ${interaction.guild.memberCount}`);
+			await interaction.reply({content: `Server name: ${interaction.guild.name}\nTotal members: ${interaction.guild.memberCount}`, ephemeral: true});
 		}
 	},
 };
