@@ -10,7 +10,8 @@ module.exports = {
 				.setDescription('The question')
 				.setRequired(true)
 				.addChoices(
-					{ name: 'When is training tomorrow?', value: 'Training is tomorrow.' },
+					{ name: 'Who do I reach out to if I am not receiving my pay for my position?', value: 'You can contact your direct supervisor or email joseph.briones@email.ucr.edu' },
+					{ name: 'Who is in charge of crisis and development?', value: 'John Paul Wolf' },
 					{ name: 'More specific question', value: 'other' }
 				)),
 	async execute(interaction) {
