@@ -32,7 +32,6 @@ module.exports = {
                 { name: '/faq', value: "Do /faq to list out the most frequently asked questions with answers" },
                 { name: '/info', value: "Do /info to get information about a user or the server" },
                 { name: '/private', value: "Do /private to create a private channel to speak to one of the admins" },
-                { name: '/pushnewsletter', value: "Do /pushnewsletter to push the newsletter to all users with the role (admin)" },
                 { name: '/schedule', value: "Do /schedule and provide a day to get the schedule for that day" },
                 { name: '/update (get)', value: "Do /update (get) to retrieve the latest set updates by an admin" }
             )
