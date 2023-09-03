@@ -1,6 +1,6 @@
-import { readdirSync } from 'node:fs';
-import { join } from 'node:path';
-import { Client, Collection, Events, GatewayIntentBits } from 'discord.js';
+const fs = require('node:fs');
+const path = require('node:path');
+const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 require('dotenv').config();
 const token = process.env.TOKEN;
 const url = process.env.URL;
