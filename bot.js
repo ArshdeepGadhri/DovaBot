@@ -15,14 +15,14 @@ const client = new Client({
 });
 
 client.commands = new Collection();
-const foldersPath = join(__dirname, 'commands');
-const commandFolders = readdirSync(foldersPath);
+const foldersPath = path.join(__dirname, 'commands');
+const commandFolders = fs.readdirSync(foldersPath);
 
 for (const folder of commandFolders) {
-	const commandsPath = join(foldersPath, folder);
-	const commandFiles = readdirSync(commandsPath).filter(file => file.endsWith('.js'));
+	const commandsPath = path.join(foldersPath, folder);
+	const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 	for (const file of commandFiles) {
-		const filePath = join(commandsPath, file);
+		const filePath = path.join(commandsPath, file);
 		const command = require(filePath);
 		if ('data' in command && 'execute' in command) {
 			client.commands.set(command.data.name, command);
@@ -32,11 +32,11 @@ for (const folder of commandFolders) {
 	}
 }
 
-const eventsPath = join(__dirname, 'events');
-const eventFiles = readdirSync(eventsPath).filter(file => file.endsWith('.js'));
+const eventsPath = path.join(__dirname, 'events');
+const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 
 for (const file of eventFiles) {
-	const filePath = join(eventsPath, file);
+	const filePath = path.join(eventsPath, file);
 	const event = require(filePath);
 	if (event.once) {
 		client.once(event.name, (...args) => event.execute(...args));
@@ -44,11 +44,5 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 };
-
-// client.on(Events.GuildMemberAdd, async (member) => {
-// 	const roleID = process.env.AUTO_ROLE_ID;
-// 	var role = await member.guild.roles.cache.get(roleID);
-// 	member.roles.add(role);
-// });
 
 client.login(token);
