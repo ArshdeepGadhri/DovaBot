@@ -37,11 +37,11 @@ module.exports = {
 					content: 'A private channel has been created for you to ask your question!',
 					ephemeral: true,
 				});
-				return;
 			} catch (error) {
 				console.log(error);
 			}
+		} else {
+			await interaction.reply({ content: answer, ephemeral: true })
 		}
-		await interaction.reply({ content: answer, ephemeral: true })
 	},
 };
