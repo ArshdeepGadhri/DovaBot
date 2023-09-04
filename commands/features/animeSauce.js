@@ -50,6 +50,6 @@ module.exports = {
             .setFooter({iconURL: data.image, text: `Similarity ${similarity}`})
             .setColor('Aqua');
 
-        await interaction.reply({ embeds: [embed] });
+        await interaction.reply({ embeds: [embed], ephemeral: true });
     },
 };
