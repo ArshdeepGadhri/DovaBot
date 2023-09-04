@@ -38,7 +38,7 @@ module.exports = {
         const applied = await translate(message, { to : `${language}`});
 
         const embed = new EmbedBuilder()
-            .setColor("aqua")
+            .setColor("Aqua")
             .setTitle("Translator")
             .addFields({ name: "Old Text", value: `\`\`\`${message}\`\`\``, inline: false})
             .addFields({ name: "New Text", value: `\`\`\`${applied.text}\`\`\``, inline: false});
