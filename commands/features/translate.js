@@ -33,7 +33,7 @@ module.exports = {
         const message = interaction.options.getString("message")
         const language = interaction.options.getString("language")
 
-        await interaction.reply({ content: `Translating your language...`, ephemeral: true})
+        await interaction.reply({ content: `Translating your message...`, ephemeral: true})
 
         const applied = await translate(message, { to : `${language}`});
 
