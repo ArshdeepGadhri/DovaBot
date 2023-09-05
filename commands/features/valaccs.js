@@ -148,7 +148,7 @@ module.exports = {
                             embed.setTitle(`Your Val Accounts ranked ${rank}`)
                             embed.setURL("http://13.59.235.38")
                             data.forEach(account => {
-                                embed.addFields([{ name: `Username: ${account.username}\nPassword: ${account.password}`, value: `**${account.riot_id}#${account.tagline}**\n${account.rank}\n-${account.notes||"n/a"}`, inline: false }])
+                                embed.addFields([{ name: `Username: ${account.username}\nPassword: ${account.password}`, value: `**${account.riot_id}#${account.tagline}**\n${account.rank}\n-${account.notes||"n/a"}`, inline: true }])
                             })
                             modalInteraction.reply({ embeds: [embed], ephemeral: true });
                         })
