@@ -1,9 +1,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
+const { Client, Collection, Events, GatewayIntentBits, GuildVoice, ChannelType } = require('discord.js');
 require('dotenv').config();
 const token = process.env.TOKEN;
-const url = process.env.URL;
 
 const client = new Client({
 	intents: [
@@ -11,8 +10,10 @@ const client = new Client({
 		GatewayIntentBits.GuildMessages,
 		GatewayIntentBits.MessageContent,
 		GatewayIntentBits.GuildMembers,
+		GatewayIntentBits.GuildVoiceStates
 	],
 });
+
 
 client.commands = new Collection();
 const foldersPath = path.join(__dirname, 'commands');
@@ -45,4 +46,93 @@ for (const file of eventFiles) {
 	}
 };
 
+let voiceManager = new Collection();
+
+var newCreatedChannels = [];
+
+const channelID = process.env.JOIN_TO_CREATE_CHANNEL;
+const userLimit = process.env.JOIN_TO_CREATE_USER_LIMIT;
+
+client.on("voiceStateUpdate", async (oldState, newState) => {
+
+
+	const { member, guild } = oldState;
+	const newChannel = newState.channel;
+	const oldChannel = oldState.channel;
+
+	
+	try {
+		let channelName = oldChannel.name;
+		if (channelName.includes("'s vc")) {
+			if (oldChannel.members.size == 0) {
+				oldChannel.delete().catch(console.error)
+			}
+		}
+	} catch (err) {
+		console.log(`Error: ${err}`)
+	}
+
+	const channel = client.channels.cache.get(channelID);
+
+	if (oldChannel !== newChannel && newChannel && newChannel.id === channel.id) {
+		const voiceChannel = await guild.channels.create({
+			name: `🔊 ${member.user.displayName}'s vc`,
+			type: ChannelType.GuildVoice,
+			parent: newChannel.parent,
+			permissionOverwrites: [
+				{
+					id: member.id,
+					allow: ["Connect", "ManageChannels"]
+				},
+				{
+					id: guild.id,
+					allow: ["Connect"]
+				}
+
+			],
+			userLimit: userLimit
+		})
+
+		newCreatedChannels.push(voiceChannel.id);
+
+		voiceManager.set(member.id, voiceChannel.id);
+
+		await newChannel.permissionOverwrites.edit(member, { Connect: false });
+
+		setTimeout(() => {
+			newChannel.permissionOverwrites.delete(member)
+		}, 30000);
+
+		return setTimeout(() => {
+			member.voice.setChannel(voiceChannel)
+		}, 500);
+
+	}
+
+	const jointocreate = voiceManager.get(member.id);
+	const members = oldChannel?.members.filter((members) => !members.user.bot).map((members) => members.id);
+
+	if (jointocreate && oldChannel.id === jointocreate && (!newChannel || newChannel.id !== jointocreate)) {
+		if (members.length > 0) {
+			let randomID = members[Math.floor(Math.random() * members.length)];
+			let randomMember = guild.members.cache.get(randomID);
+
+			randomMember.voice.setChannel(oldChannel).then((voice) => {
+				oldChannel.setName(randomMember.user.username).catch((err) => {
+					console.log(`Error: ${err}`)
+				})
+				oldChannel.permissionOverwrites.edit(randomMember, { Connect: true, ManageChannels: true })
+			})
+			voiceManager.set(member.id, null);
+			voiceManager.set(randomMember.id, oldChannel.id)
+		} else {
+			voiceManager.set(member.id, null)
+			oldChannel.delete().catch((err) => {
+				console.log(`Error: ${err}`)
+			})
+		}
+	}
+})
+
 client.login(token);
+
