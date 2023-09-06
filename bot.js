@@ -60,12 +60,14 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 	const newChannel = newState.channel;
 	const oldChannel = oldState.channel;
 
-	
+
 	try {
-		let channelName = oldChannel.name;
-		if (channelName.includes("'s vc")) {
-			if (oldChannel.members.size == 0) {
-				oldChannel.delete().catch(console.error)
+		if (oldChannel) {
+			let channelName = oldChannel.name;
+			if (channelName.includes("'s vc")) {
+				if (oldChannel.members.size == 0) {
+					oldChannel.delete().catch(console.error)
+				}
 			}
 		}
 	} catch (err) {
