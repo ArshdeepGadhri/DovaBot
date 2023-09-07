@@ -64,7 +64,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 	try {
 		if (oldChannel) {
 			let channelName = oldChannel.name;
-			if (channelName.includes("'s vc")) {
+			if (channelName.includes(`'s vc`) && channelName.includes("🔊")) {
 				if (oldChannel.members.size == 0) {
 					oldChannel.delete().catch(console.error)
 				}
