@@ -40,7 +40,7 @@ module.exports = {
                 { name: optionTwo, value: "0", inline: true }
             ])
             .setTimestamp()
-            .setThumbnail("https://w7.pngwing.com/pngs/842/509/png-transparent-opinion-polling-on-the-donald-trump-administration-poll-everywhere-social-polling-youtube-youtube-text-trademark-rectangle-thumbnail.png")
+            .setThumbnail("https://cdn.icon-icons.com/icons2/3198/PNG/512/poll_icon_195220.png")
             .setColor('Aqua');
 
         const replyObject = await interaction.reply({ embeds: [pollEmbed], fetchReply: true });
