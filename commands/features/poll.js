@@ -50,11 +50,11 @@ module.exports = {
                 new ButtonBuilder()
                     .setLabel(optionOne)
                     .setCustomId(`Poll-Yes-${replyObject.id}`)
-                    .setStyle(ButtonStyle.Primary),
+                    .setStyle(ButtonStyle.Success),
                 new ButtonBuilder()
                     .setLabel(optionTwo)
                     .setCustomId(`Poll-No-${replyObject.id}`)
-                    .setStyle(ButtonStyle.Secondary)
+                    .setStyle(ButtonStyle.Success)
             )
 
         interaction.editReply({ components: [pollButtons] })
