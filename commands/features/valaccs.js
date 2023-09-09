@@ -88,6 +88,7 @@ async function addAccount(token, username, password, riot_id = "", rank, tagline
 
 module.exports = {
     cooldown: 5,
+    folder: "features",
     data: data,
     async execute(interaction) {
         const modal = new ModalBuilder({

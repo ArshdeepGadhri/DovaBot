@@ -4,6 +4,7 @@ const translate = require("@iamtraction/google-translate");
 
 module.exports = {
     cooldown: 5,
+    folder: "features",
     data: new SlashCommandBuilder()
         .setName('translate')
         .setDescription('Translate messages to other languages')

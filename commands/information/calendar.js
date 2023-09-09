@@ -2,6 +2,7 @@ const { SlashCommandBuilder, AttachmentBuilder } = require('discord.js');
 
 module.exports = {
 	cooldown: 5,
+	folder: "information",
 	data: new SlashCommandBuilder()
 		.setName('calendar')
 		.setDescription('Get the calendar'),

@@ -15,6 +15,7 @@ const data = new SlashCommandBuilder()
 
 module.exports = {
 	cooldown: 5,
+	folder: "information",
 	data: data,
 	async execute(interaction) {
 		if (interaction.options.getSubcommand() === 'user') {

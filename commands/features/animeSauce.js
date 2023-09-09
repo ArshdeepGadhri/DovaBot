@@ -11,6 +11,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 module.exports = {
     cooldown: 5,
+    folder: "features",
     data: new SlashCommandBuilder()
         .setName('animesauce')
         .setDescription('Replies with the data of the anime from the photo provided')

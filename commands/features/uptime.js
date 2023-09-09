@@ -27,6 +27,7 @@ function sendUptimeMessage(Channel) {
 
 module.exports = {
   cooldown: 5,
+  folder: "features",
   data: new SlashCommandBuilder()
     .setName('uptime')
     .setDescription('Sends the bot\'s uptime periodically')

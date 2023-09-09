@@ -6,8 +6,8 @@ const data = new SlashCommandBuilder()
     .setDMPermission(true);
 
 module.exports = {
-
     cooldown: 5,
+    folder: "features",
     data: data,
     async execute(interaction) {
         const member = await interaction.member;

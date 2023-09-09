@@ -2,6 +2,7 @@ const { SlashCommandBuilder, PermissionFlagsBits, ChatInputCommandInteraction, E
 
 module.exports = {
     cooldown: 5,
+    folder: "features",
     data: new SlashCommandBuilder()
         .setName("poll")
         .setDescription("Create a poll")

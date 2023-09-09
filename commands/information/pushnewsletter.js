@@ -8,6 +8,7 @@ const data = new SlashCommandBuilder()
 module.exports = {
     cooldown: 5,
     data: data,
+    folder: "information",
     async execute(interaction) {
         const guild = interaction.guild;
         const roleName = process.env.ROLE_NAME;

@@ -59,6 +59,7 @@ function sendEmbed(title, description, author, authorIcon, subTitle, subDescript
 
 module.exports = {
     cooldown: 5,
+    folder: "information",
     data: data,
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'set') {

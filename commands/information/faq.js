@@ -2,6 +2,7 @@ const { SlashCommandBuilder, ChannelType, ThreadAutoArchiveDuration } = require(
 
 module.exports = {
 	cooldown: 5,
+	folder: "information",
 	data: new SlashCommandBuilder()
 		.setName('faq')
 		.setDescription('Frequency asked questions')

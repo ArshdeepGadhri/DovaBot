@@ -21,6 +21,7 @@ const data = new SlashCommandBuilder()
 
 module.exports = {
 	cooldown: 5,
+    folder: "features",
 	data: data,
 	async execute(interaction) {
         var channel = interaction.options.getChannel("channel");

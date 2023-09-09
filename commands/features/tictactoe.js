@@ -4,6 +4,7 @@ const game = new TicTacToe({ language: "en", commandOptionName: "opponent"});
 
 module.exports = {
 	cooldown: 5,
+	folder: "features",
 	data: new SlashCommandBuilder()
 		.setName('tictactoe')
 		.setDescription('Play tictactoe')

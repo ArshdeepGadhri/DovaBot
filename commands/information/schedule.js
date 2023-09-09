@@ -15,6 +15,7 @@ function sendEmbed(title, fields, avatarURL) {
 
 module.exports = {
 	cooldown: 5,
+    folder: "information",
 	data: new SlashCommandBuilder()
 		.setName('schedule')
 		.setDescription('Retrieve the schedule for a given day')

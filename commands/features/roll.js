@@ -2,6 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
 	cooldown: 5,
+    folder: "features",
 	data: new SlashCommandBuilder()
 		.setName('roll')
 		.setDescription('Roll a die!')

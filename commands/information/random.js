@@ -2,6 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('disc
 
 module.exports = {
 	cooldown: 5,
+    folder: "information",
 	data: new SlashCommandBuilder()
 		.setName('resources')
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
