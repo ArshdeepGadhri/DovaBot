@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 const data = new SlashCommandBuilder()
 	.setName('info')
@@ -26,7 +26,29 @@ module.exports = {
 				await interaction.reply({content: `Your username: ${interaction.user.username}\nYour ID: ${interaction.user.id}`, ephemeral: true});
 			}
 		} else if (interaction.options.getSubcommand() === 'server') {
-			await interaction.reply({content: `Server name: ${interaction.guild.name}\nTotal members: ${interaction.guild.memberCount}`, ephemeral: true});
+			var server = interaction.guild;
+			const emojis = server.emojis.cache;
+        	const roles = server.roles.cache;
+
+			server.members.fetch(server.ownerId).then((owner) => {
+				const embed = new EmbedBuilder()
+				.setColor('#FFFFFF')
+				.setTitle('📊 Server Info')
+				.setThumbnail(server.iconURL({ format: 'png', dynamic: true, size: 1024 }))
+				.setDescription(`
+					**Server Name:** ${server.name}
+					**Server ID:** ${server.id}
+					**Owner:** ${owner.user.tag}
+					**Created At:** ${server.createdAt.toUTCString()}
+					**Members:** ${server.memberCount}
+					**Emojis:** ${emojis.size} emojis
+					**Roles:** ${roles.size} roles
+				`)
+				.setTimestamp();
+			
+		
+			interaction.reply({ embeds: [embed], ephemeral: true })
+			}).catch((err) => console.log(`Error: ${err}`));
 		}
 	},
 };
