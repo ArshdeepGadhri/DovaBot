@@ -27,18 +27,18 @@ module.exports = {
         var time = ms(interaction.options.getString("time") || '1m');
         var message = interaction.options.getString("message");
 
-        await interaction.reply({ content: "Your reminder has been noted", ephemeral: true })
-
         const embed = new EmbedBuilder()
             .setColor('#FFFFFF')
             .setTitle(`Your reminder from \`${interaction.options.getString("time")}\` ago.`)
             .setDescription(`\`${message}\``)
             .setTimestamp();
 
+        await interaction.reply({ content: "Your reminder has been noted", ephemeral: true })
+
         setTimeout(() => {
             interaction.member.user.send({ embeds: [embed] });
         }, time); 
 
-        await interaction.reply({ content: "Your reminder has been noted", ephemeral: true })
+        
     },
 };
