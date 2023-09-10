@@ -13,6 +13,7 @@
     "discord-html-transcripts": "^3.1.5",
     "discord-tictactoe": "^4.2.0",
     "discord.js": "^14.13.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "ms": "^2.1.3"
   }
 }

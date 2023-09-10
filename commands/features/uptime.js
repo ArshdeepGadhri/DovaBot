@@ -46,6 +46,8 @@ module.exports = {
     var channel = interaction.options.getChannel("channel"); 
     var hours = interaction.options.getNumber("hours") || 1; 
 
+    await interaction.reply({ content: "Fetching updates", ephemeral: true })
+
     sendUptimeMessage(channel);
 
     setInterval(() => {

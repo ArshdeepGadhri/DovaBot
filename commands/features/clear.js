@@ -1,5 +1,4 @@
 const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder, ChatInputCommandInteraction } = require("discord.js");
-const Transcripts = require("discord-html-transcripts");
 
 const data = new SlashCommandBuilder()
 	.setName('clear')
@@ -47,7 +46,7 @@ module.exports = {
             `- Channel: ${interaction.channel}`,
             `- Reason: ${reason}`
         ]
-        var transcript;
+
         if (user) {
             let i = 0;
             let messagesToDelete = [];
@@ -57,18 +56,16 @@ module.exports = {
                     i++
                 }
             })
-            //transcript = await Transcripts.generateFromMessages(messagesToDelete, interaction.channel);
             
-            interaction.channel.bulkDelete(messagesToDelete, true).then(messages => {
+            await interaction.channel.bulkDelete(messagesToDelete, true).then(messages => {
                 embed.push(`- Cleared: ${messages.size} from ${user}`);
                 logEmbed.setDescription(embed.join("\n"));
                 //interaction.reply({embeds: [logEmbed], files: [transcript], ephemeral: true});
                 interaction.reply({embeds: [logEmbed], ephemeral: true});
             })
         } else {
-            //transcript = await Transcripts.createTranscript(interaction.channel, { limit: amount });
             
-            interaction.channel.bulkDelete(amount, true).then(messages => {
+            await interaction.channel.bulkDelete(amount, true).then(messages => {
                 embed.push(`- Cleared: ${messages.size}`);
                 logEmbed.setDescription(embed.join("\n"));
                 //interaction.reply({embeds: [logEmbed], files: [transcript], ephemeral: true});
