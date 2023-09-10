@@ -33,7 +33,7 @@ module.exports = {
             .setColor('#FFFFFF')
             .setTitle(`Your reminder from \`${interaction.options.getString("time")}\` ago.`)
             .setDescription(`\`${message}\``)
-            .setTimestamp(true);
+            .setTimestamp();
 
         setTimeout(() => {
             interaction.member.user.send({ embeds: [embed] });
