@@ -31,7 +31,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor('#FFFFFF')
-            .setTitle(`Your reminder from ${ms(time)} ago.`)
+            .setTitle(`Your reminder from \`${interaction.options.getString("time")}\` ago.`)
             .setDescription(`\`${message}\``)
             .setTimestamp(true);
 
