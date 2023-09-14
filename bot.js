@@ -120,7 +120,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 			let randomMember = guild.members.cache.get(randomID);
 
 			randomMember.voice.setChannel(oldChannel).then((voice) => {
-				oldChannel.setName(randomMember.user.username).catch((err) => {
+				oldChannel.setName(`🔊 ${randomMember.user.displayName}'s vc`).catch((err) => {
 					console.log(`Error: ${err}`)
 				})
 				oldChannel.permissionOverwrites.edit(randomMember, { Connect: true, ManageChannels: true })

@@ -1,0 +1,153 @@
+{
+    "mat322": {
+        "day": "Tue 1-3pm ON Lec, Wed 2-3pm ON Tut, Thu 11-12pm ON Lec",
+        "OH": "Office hours: Tu 15:10-16:10 on Zoom, Th 12:10-13:00 on Zoom",
+        "TA": "Yulia Bibilo, yulia.bibilo@utoronto.ca",
+        "grading": [
+            {
+                "Item": "In-Class quizzes",
+                "Description": "N/A",
+                "Weight": "33/3%",
+                "Date": "September 26, October 31, and November 21"
+            },
+            {
+                "Item": "Assignments",
+                "Description": "With an analytic and a computational part. Each assignment will include an oral defence, in the form of a brief Q&A session. The oral defense is mandatory",
+                "Weight": "67/3%",
+                "Date": "n/a"
+            }
+        ]
+    },
+    "lin204": {
+        "day": "Wed 5-6pm IP (IB360) Tut, Online Lec Recordings",
+        "OH": "Professor is regularly available on Discord on Mondays and Tuesdays for answering questions. MN4158 or Zoom",
+        "TA": "Martin Renard, martin.renard@mail.utoronto.ca",
+        "grading": [
+            [
+                {
+                    "Item": "Syllabus quiz and linguistic autoethnography.",
+                    "Description": "Quiz on the syllabus, academic integrity, and copyright + a written or creative reflection on your own language background.",
+                    "Weight": "3%",
+                    "Date": "11:59pm on Monday, 25 September"
+                },
+                {
+                    "Item": "Lecture Comprehension Check (LCC)",
+                    "Description": "Weekly homework quiz that assesses you on the lecture video contents.",
+                    "Weight": "1% each",
+                    "Date": "11:59pm on Tuesdays each week"
+                },
+                {
+                    "Item": "Tutorial attendance.",
+                    "Description": "Mandatory Attendance",
+                    "Weight": "1% each",
+                    "Date": "Wed 5-6pm IP (IB360) Tut"
+                },
+                {
+                    "Item": "Written Exercises (WEs)",
+                    "Description": "Typically, two to three long answer questions or other critical reasoning questions. You may be asked to justify your answer and show evidence of sound logical reasoning.",
+                    "Weight": "32% x2",
+                    "Date": "WE1: 11:59pm on Monday, 9 October - WE2: 11:59pm on Monday, 13 November"
+                },
+                {
+                    "Item": "Term Tests (TTs)",
+                    "Description": "In-person, to take place during tutorial. Typically a mixture of multiple choice and free response questions. These tests typically assess you on technical concepts and skills in linguistics.",
+                    "Weight": "10% x2",
+                    "Date": "TT1: Wednesday, 25 October TT2: Wednesday, 29 November"
+                }
+            ]
+        ]
+    },
+    "ant102": {
+        "day": "Mon 3-4pm IP (IB110) Lec, Wed 3-4pm IP (IB110) Lec, Thu 3-4pm IP (IB140) Tut",
+        "OH": "Professor is regularly available on Discord on Mondays and Tuesdays for answering questions. MN4158 or Zoom",
+        "TA": "Martin Renard, martin.renard@mail.utoronto.ca",
+        "grading": [
+            {
+                "Item": "Mid-term test (in class)",
+                "Description": "N/A",
+                "Weight": "30%",
+                "Date": "Wednesday, Oct. 25, 2023 – in person"
+            },
+            {
+                "Item": "Essay",
+                "Description": "N/A",
+                "Weight": "20%",
+                "Date": "Tuesday, Dec. 5, 2023 – via Quercus"
+            },
+            {
+                "Item": "Tutorials",
+                "Description": "1 mark per tutorial ",
+                "Weight": "10%",
+                "Date": "Thu 3-4pm IP (IB140)"
+            },
+            {
+                "Item": "Final Examination ",
+                "Description": "N/A",
+                "Weight": "40%",
+                "Date": "TBA - IP"
+            }
+        ]
+    },
+    "soc100": {
+        "day": "Tue 10-11am IP (IB110) Lec, Thu 10-11am IP (IB110) Lec",
+        "OH": "Thursdays 12:30-2:30, or by appointment - MN6268",
+        "TA": "N/A",
+        "grading": [
+            {
+                "Item": "Term Test",
+                "Description": "Test One (Module One)",
+                "Weight": "14%",
+                "Date": "2023-09-21"
+            },
+            {
+                "Item": "Term Test",
+                "Description": "Test Two (Module Two)",
+                "Weight": "18%",
+                "Date": "2023-10-05"
+            },
+            {
+                "Item": "Term Test",
+                "Description": "Test Three (Module Three)",
+                "Weight": "22%",
+                "Date": "2023-10-31"
+            },
+            {
+                "Item": "Assignment",
+                "Description": "Essay (Module Four)",
+                "Weight": "24%",
+                "Date": "2023-11-23"
+            },
+            {
+                "Item": "Term Test",
+                "Description": "Test Five (Module Five)",
+                "Weight": "12%",
+                "Date": "2023-12-05"
+            },
+            {
+                "Item": "Assignment",
+                "Description": "Textbook Discussion Questions",
+                "Weight": "6%",
+                "Date": "2023-12-05"
+            },
+            {
+                "Item": "Assignment",
+                "Description": "Textbook Multiple-Choice Questions (see Quercus for due date info)",
+                "Weight": "4%",
+                "Date": "Ongoing"
+            }
+        ]
+    },
+    "csc369": {
+        "day": "Tue 11-1pm IP (MN1190) Lec",
+        "OH": "",
+        "TA": "",
+        "grading": [
+            {
+                "Item": "In-Class quizzes",
+                "Description": "N/A",
+                "Weight": "33/3%",
+                "Date": "September 26, October 31, and November 21"
+            }
+        ]
+    }
+}
