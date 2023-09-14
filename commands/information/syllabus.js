@@ -4,7 +4,7 @@ function sendEmbed(title, oh, ta, fields, avatarURL) {
     var updateEmbed = new EmbedBuilder()
         .setColor("Blurple")
         .setTitle(title)
-        .addFields([{ name: ta, value: oh }])
+        .addFields([{ name: `TA: ` + ta, value: `OH: ` + oh }])
         .setFooter({ iconURL: avatarURL, text: "Schedule" })
         .setThumbnail("https://cdn-icons-png.flaticon.com/512/2693/2693710.png");
     fields.forEach(field => {
@@ -13,7 +13,7 @@ function sendEmbed(title, oh, ta, fields, avatarURL) {
         var weight = field.Weight;
         var date = field.Date;
         updateEmbed.setDescription(description)
-        updateEmbed.addFields([{ name: item, value: `${date} - ${weight}`, inline: true }])
+        updateEmbed.addFields([{ name: item, value: `${date}\n\`${weight}\``, inline: true }])
     })
     return updateEmbed;
 }
