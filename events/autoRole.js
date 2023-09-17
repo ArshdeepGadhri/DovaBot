@@ -18,7 +18,7 @@ module.exports = {
 			)
 
 			const captchaEmbed = new EmbedBuilder()
-				.setDescription("30 Seconds to solve.")
+				.setDescription("1 Minute to solve.")
 				.setImage(`attachment://captcha.png`)
 				.setTitle("Solve the Captcha to get access to the server.")
 
@@ -36,7 +36,7 @@ module.exports = {
 				}
 			}
 			try {
-				const response = await msg.channel.awaitMessages({ filter, max: 1, time: 30000, errors: ['time'] })
+				const response = await msg.channel.awaitMessages({ filter, max: 1, time: 60000, errors: ['time'] })
 				
 				if (response) {
 					const roleID = process.env.MEMBER_ROLE_ID;
