@@ -1,6 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const { Client, Collection, Events, GatewayIntentBits, Partials, ChannelType } = require('discord.js');
+const { Client, Collection, Events, GatewayIntentBits, Partials, ChannelType, PermissionsBitField } = require('discord.js');
 require('dotenv').config();
 const token = process.env.TOKEN;
 
@@ -83,7 +83,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 
 	if (oldChannel !== newChannel && newChannel && newChannel.id === channel.id) {
 		const voiceChannel = await guild.channels.create({
-			name: `🔊 ${member.user.displayName}'s vc`,
+			name: `🔊 ${member.user.username}'s vc`,
 			type: ChannelType.GuildVoice,
 			parent: newChannel.parent,
 			permissionOverwrites: [
@@ -93,7 +93,12 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 				},
 				{
 					id: guild.id,
-					allow: ["Connect"]
+					deny: [PermissionsBitField.Flags.ViewChannel],
+					// allow: ["Connect"]
+				},
+				{
+					id: process.env.MEMBER_ROLE_ID,
+					allow: [PermissionsBitField.Flags.ViewChannel, "Connect"]
 				}
 
 			],
@@ -125,7 +130,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 			let randomMember = guild.members.cache.get(randomID);
 
 			randomMember.voice.setChannel(oldChannel).then((voice) => {
-				oldChannel.setName(`🔊 ${randomMember.user.displayName}'s vc`).catch((err) => {
+				oldChannel.setName(`🔊 ${randomMember.user.username}'s vc`).catch((err) => {
 					console.log(`Error: ${err}`)
 				})
 				oldChannel.permissionOverwrites.edit(randomMember, { Connect: true, ManageChannels: true })
