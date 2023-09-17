@@ -18,7 +18,7 @@ module.exports = {
 			)
 
 			const captchaEmbed = new EmbedBuilder()
-				.setDescription("1 Minute to solve.")
+				.setDescription("1 Minute to solve. Enter the green text.")
 				.setImage(`attachment://captcha.png`)
 				.setTitle("Solve the Captcha to get access to the server.")
 
