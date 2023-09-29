@@ -20,6 +20,12 @@ module.exports = {
 			const user = interaction.user;
 			const userName = user.username;
 			const threadName = userName + "'s Question";
+
+		
+
+        	const ownerID = process.env.OWNER_ID;
+        	const owner = await interaction.client.users.fetch(ownerID);
+
 			try {
 				// Create a new private thread 
 				const threadChannel = await channel.threads
@@ -31,6 +37,7 @@ module.exports = {
 					});
 
 				await threadChannel.members.add(user);
+				if (user !== owner) await threadChannel.members.add(owner);
 
 				await interaction.reply({
 					content: 'A private channel has been created for you to ask your question!',

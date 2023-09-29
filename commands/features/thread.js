@@ -29,6 +29,14 @@ module.exports = {
         var title = interaction.options.getString("title");
         var description = interaction.options.getString("reason");
 
-        await channel.threads.create({ name: title, message: { content: description }, reason: description, appliedTags: ['tagID', 'anotherTagID'] });
+        const user = interaction.user;
+
+        const ownerID = process.env.OWNER_ID;
+        const owner = await interaction.client.users.fetch(ownerID);
+
+        const threadChannel = await channel.threads.create({ name: title, message: { content: description }, reason: description, appliedTags: ['tagID', 'anotherTagID'] });
+        
+        await threadChannel.members.add(user);
+        if (user !== owner) await threadChannel.members.add(owner);
 	},
 };
