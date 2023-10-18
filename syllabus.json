@@ -136,18 +136,5 @@
                 "Date": "Ongoing"
             }
         ]
-    },
-    "csc369": {
-        "day": "Tue 11-1pm IP (MN1190) Lec",
-        "OH": "",
-        "TA": "",
-        "grading": [
-            {
-                "Item": "In-Class quizzes",
-                "Description": "N/A",
-                "Weight": "33/3%",
-                "Date": "September 26, October 31, and November 21"
-            }
-        ]
     }
 }

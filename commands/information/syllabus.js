@@ -9,7 +9,7 @@ function sendEmbed(title, oh, ta, fields, avatarURL) {
         .setThumbnail("https://cdn-icons-png.flaticon.com/512/2693/2693710.png");
     fields.forEach(field => {
         var item = field.Item;
-        var description = field.Description;
+        var description = field.Description || "n/a";
         var weight = field.Weight;
         var date = field.Date;
         updateEmbed.setDescription(description)
@@ -32,8 +32,7 @@ module.exports = {
                     { name: 'Mat322', value: 'mat322' },
                     { name: 'Lin204', value: 'lin204' },
                     { name: 'Ant102', value: 'ant102' },
-                    { name: 'Soc100', value: 'soc100' },
-                    { name: 'Csc369', value: 'csc369' },
+                    { name: 'Soc100', value: 'soc100' }
                 )),
 
     async execute(interaction) {
