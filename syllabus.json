@@ -23,7 +23,6 @@
         "OH": "Professor is regularly available on Discord on Mondays and Tuesdays for answering questions. MN4158 or Zoom",
         "TA": "Martin Renard, martin.renard@mail.utoronto.ca",
         "grading": [
-            [
                 {
                     "Item": "Syllabus quiz and linguistic autoethnography.",
                     "Description": "Quiz on the syllabus, academic integrity, and copyright + a written or creative reflection on your own language background.",
@@ -54,7 +53,6 @@
                     "Weight": "10% x2",
                     "Date": "TT1: Wednesday, 25 October TT2: Wednesday, 29 November"
                 }
-            ]
         ]
     },
     "ant102": {
