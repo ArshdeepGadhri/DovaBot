@@ -26,6 +26,9 @@ module.exports = {
 
         const yesField = pollEmbed.fields[0];
         const noField = pollEmbed.fields[1];
+        const maybeField = pollEmbed.fields[2];
+        const fourField = pollEmbed.fields[3];
+        const fiveField = pollEmbed.fields[4];
 
         const voteCountedReply = "Your vote has been recorded."
 
@@ -41,6 +44,30 @@ module.exports = {
             case "No": {
                 const newNoCount = parseInt(noField.value) + 1;
                 noField.value = newNoCount;
+
+                interaction.reply({content: voteCountedReply, ephemeral: true})
+                interaction.message.edit({embeds: [pollEmbed]})
+            }
+            break;
+            case "Maybe": {
+                const newMaybeCount = parseInt(maybeField.value) + 1;
+                maybeField.value = newMaybeCount;
+
+                interaction.reply({content: voteCountedReply, ephemeral: true})
+                interaction.message.edit({embeds: [pollEmbed]})
+            }
+            break;
+            case "Four": {
+                const newFourCount = parseInt(fourField.value) + 1;
+                fourField.value = newFourCount;
+
+                interaction.reply({content: voteCountedReply, ephemeral: true})
+                interaction.message.edit({embeds: [pollEmbed]})
+            }
+            break;
+            case "Five": {
+                const newFiveCount = parseInt(fiveField.value) + 1;
+                fiveField.value = newFiveCount;
 
                 interaction.reply({content: voteCountedReply, ephemeral: true})
                 interaction.message.edit({embeds: [pollEmbed]})
