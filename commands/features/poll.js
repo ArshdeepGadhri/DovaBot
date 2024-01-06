@@ -54,6 +54,12 @@ module.exports = {
         if (optionThree) {
             pollEmbed.addFields([{ name: optionThree, value: "0", inline: true }])
         }
+        if (optionFour) {
+            pollEmbed.addFields([{ name: optionFour, value: "0", inline: true }])
+        }
+        if (optionFive) {
+            pollEmbed.addFields([{ name: optionFive, value: "0", inline: true }])
+        }
 
         const replyObject = await interaction.reply({ embeds: [pollEmbed], fetchReply: true });
 
